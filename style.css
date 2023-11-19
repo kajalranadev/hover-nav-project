@@ -72,6 +72,6 @@ header a:hover::before {
   }
 
   header a:hover::before {
-    content: "\1F44D";
+    content: "\1F64C";
   }
 }
