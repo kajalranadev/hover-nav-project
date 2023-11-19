@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "cursive";
+  src: url("cursive.woff2");
+}
+
+body {
+  background-color: #c5e1a5;
+  font-family: monospace;
+  /* font-family: "cursive"; */
+}
+
+header {
+  width: 80vw;
+  margin: 1rem auto;
+}
+
+header h1 {
+  font-family: "cursive";
+  margin-top: 2rem;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333333;
+  margin: 0.5rem;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  font-weight: bold;
+  color: #4e742b;
+}
+
+header a:hover::before {
+  content: "\1F44D";
+}
+
+/* Media query for mobile responsive */
+@media (max-width: 844px) {
+  header {
+    width: 90vw;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+}
