@@ -49,12 +49,29 @@ header a:hover::before {
 }
 
 /* Media query for mobile responsive */
+
 @media (max-width: 844px) {
-  header {
-    width: 90vw;
+  body {
+    background-color: #4e742b;
+    color: #ffffff;
+  }
+
+  nav a {
+    color: #ffffff;
+    font-size: 1rem;
+  }
+
+  nav a:hover {
+    font-weight: bold;
+    color: #c5e1a5;
   }
 
   header h1 {
     font-size: 2rem;
+    color: #ffffff;
+  }
+
+  header a:hover::before {
+    content: "\1F44D";
   }
 }
